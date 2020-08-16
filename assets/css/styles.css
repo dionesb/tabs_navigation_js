@@ -3,6 +3,7 @@
 :root {
   --black: #130f0d;
   --primary: #fd951f;
+  --secondary: #444444;
   --white: #f0f0f9;
 }
 
@@ -33,11 +34,23 @@ header {
 
 main {
   margin: 0 auto;
-  width: 320px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tab-links {
   margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+
 }
 
 button {
@@ -45,10 +58,13 @@ button {
   border: none;
   background: transparent;
   text-transform: uppercase;
-  font-size: 12px;
-  padding: 16px;
+  font-size: 16px;
+  padding: 16px 32px;
   outline: none;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button::after {
@@ -58,14 +74,32 @@ button::after {
 
   content: '';
   height: 2px;
-  width: 0%;
-  background-color: var(--primary);
+  width: 100%;
+  background-color: var(--secondary);
   transition: .4s;
 }
 
 button:hover::after,
 button.active::after {
-  width: 100%;
+  background-color: var(--primary);
+}
+
+button img {
+  height: 64px;
+  fill: #fff;
+}
+
+button span {
+  margin-top: 15px;
+}
+
+.tab-content {
+  text-align: center;
+}
+
+.tab-content p {
+  margin-top: 10px;
+  line-height: 23px;
 }
 
 .tab-content>section {

@@ -8,6 +8,9 @@
   <!-- Title -->
   <title>Tabs navigation - JS</title>
 
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -18,31 +21,90 @@
 
     <!--  Header  -->
     <header>
-      <h1>Online Teaching</h1>
+      <h1>My technologies for web development</h1>
     </header>
 
     <!--  Main content  -->
     <main>
       <div id="tabs">
         <div class="tab-links">
-          <button data-id="prepare" data-open>Prepare</button>
-          <button data-id="produce">Produce</button>
-          <button data-id="delivery">Delivery</button>
+          <button data-id="reactjs" data-open>
+            <img src="assets/svg/Reactjs.svg" alt="Logo do Reactjs">
+            <span>ReactJS</span>
+          </button>
+          <button data-id="nodejs" data-open>
+            <img src="assets/svg/Nodejs.svg" alt="Logo do Nodejs">
+            <span>Node.JS</span>
+          </button>
+          <button data-id="javascript">
+            <img src="assets/svg/JavaScript.svg" alt="Logo do JavaScript">
+            <span>Javascript</span>
+          </button>
+          <button data-id="html5">
+            <img src="assets/svg/HTML5.svg" alt="Logo do HTML5">
+            <span>HTML5</span>
+          </button>
+          <button data-id="css3">
+            <img src="assets/svg/CSS3.svg" alt="Logo do CSS3">
+            <span>CSS</span>
+          </button>
         </div>
 
         <div class="tab-content">
-          <section id="prepare">
-            <h2>How to prepare content?</h2>
-            <p>Need a lot of research and organizing ideas</p>
+          <section id="reactjs">
+            <h2>Component based</h2>
+            <p>React makes creating interactive UIs an easy task. With it we can create simple views for each state in
+              your application, and React will efficiently update and render only the necessary components as the data
+              changes.br
+            </p>
+            <p>Declarative views make your code more predictable and easier to debug.</p>
+            <p>We can create encapsulated components that manage their own state and then combine them to create complex
+              UIs.</p>
+            <p>As the component logic is written in JavaScript and not in templates, we can easily pass different types
+              of data throughout your application and still maintain the state outside the DOM.</p>
           </section>
-          <section id="produce">
-            <h2>How to produce</h2>
-            <p>Develop your idea and record it.</p>
-            <p>To record you will need: Sound, Camera, Light and a Computer</p>
+          <section id="nodejs">
+            <h2>JavaScript untime</h2>
+            <p>Node.js is open-source, cross-platform software and a JavaScript JavaScript runtime that executes
+              JavaScript code at the backend and frontend level (depending only on the libraries and frameworks used for
+              the same purpose).</p>
+            <p>Node.js has the NPM reusable package manager (Node Package Manager), the largest software repository,
+              giving the interpreter a potential to be used in any situation. The most popular package is Express.js, a
+              complete framework for developing Web applications.
+            </p>
           </section>
-          <section id="delivery">
-            <h2>How to delivery</h2>
-            <p>You can choose any digital media like: YouTube, Twitch or Instagram.</p>
+          <section id="javascript">
+            <h2>Structured interpreted programming language</h2>
+            <p>JavaScript (often abbreviated as JS) is a structured interpreted programming language, high-level script
+              with weak dynamic typing and multiparadigm (prototypes, object-oriented, imperative and, functional).
+              Along with HTML and CSS, JavaScript is one of the three main technologies on the World Wide Web.
+              JavaScript allows interactive web pages and is therefore an essential part of web applications. The vast
+              majority of websites use it, and all major browsers have a dedicated JavaScript engine to run it.
+            </p>
+            <p>
+              It is currently the main language for client-side programming in web browsers. It is also widely used on
+              the server side through environments such as node.js.
+            </p>
+          </section>
+          <section id="html5">
+            <h2>Hypertext Markup Language</h2>
+            <p>HTML5 (Hypertext Markup Language, version 5) is a markup language for the World Wide Web and is a key
+              Internet technology, originally proposed by Opera Software. It is the fifth version of the HTML language.
+              This new version brings with it important changes regarding the role of HTML in the world of the Web,
+              through new features like semantics and accessibility. Enables the use of new resources previously
+              possible only with the application of other technologies. Its essence has been to improve the language
+              with support for the latest multimedia,
+              while keeping it easily readable by humans and consistently understood by computers and other devices
+              (browsers, parsers, etc.). HTML5 will be the new standard for HTML, XHTML, and HTML DOM. Currently, it is
+              in the draft phase, but several browsers already implement some of its features.
+            </p>
+          </section>
+          <section id="css3">
+            <h2>Cascading Style Sheets (or simply CSS)</h2>
+            <p>CSS3 is the third newest version of the famous Cascading Style Sheets (or simply CSS), by which styles
+              are defined for a web project (internet page). With transition effects, image, background image and
+              others, you can create unique styles for your web projects, changing different aspects of design in the
+              page layout.</p>
           </section>
         </div>
       </div>
