@@ -1,5 +1,5 @@
 <h1 align="center">
-    Tabs navigation with JS, HTML and CSS
+    Slider Show with HTML, CSS and JS
 </h1>
 
 <p align="center"> 
